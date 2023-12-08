@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-image: url("skct.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      overflow: hidden;
+    }
+
+    .styler {
+      text-align: center;
+      background-image: linear-gradient(to right, orange, blue);
+      border-radius: 2px;
+      border: 2;
+      border-color: black;
+      border-style: groove;
+      transition: 0.3s;
+      width: 500px;
+      margin: 10px auto;
+      padding: 50px;
+      border-radius: 30px;
+      display: none; /* Initially hide the styler div */
+    }
+
+    .styler:hover {
+      background-color: aquamarine;
+    }
+
+    p {
+      font-style: oblique;
+      font-size: larger;
+      color: aliceblue;
+    }
+
+    .styler img {
+      border-radius: 80px;
+    }
+
+    .ig {
+      text-align: center;
+    }
+    .bt{
+      background-color: rgb(0, 157, 255);
+      border-radius: 15px;
+      margin: 5px auto;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script>
+    function toggleStyler() {
+  var stylerDiv = document.querySelector('.styler');
+
+  if (stylerDiv.style.display === 'none') {
+    stylerDiv.style.display = 'block';
+  } else {
+    stylerDiv.style.display = 'none';
+  }
+}
+
+  </script>
+</head>
+<body>
+  <div class="ig">
+    <img src="skctlogo.png" width="800" height="160">
+  </div>
+  <center>
+  <button class="bt" onclick="toggleStyler()">Click to see Portfolio</button>
+</center>
+  <div class="styler">
+    <img src="roy.png" width="150" height="150">
+    <p>Name: Abrohneel Roy</p>
+    <p>Department: CSE-CS</p>
+    <p>College: Sri Krishna College Of Technology</p>
+    <p>Hobby: Playing Video Games, Watching movies, Listening to music</p>
+    <p>Ambition: To become a Cyber Security Engineer</p>
+  </div>
+</body>
+</html>
